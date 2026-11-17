@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" fill="none">
+  <defs>
+    <linearGradient id="mvBg" x1="0" y1="0" x2="640" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070a18" />
+      <stop offset="100%" stop-color="#17102f" />
+    </linearGradient>
+    <linearGradient id="mvAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="380" fill="url(#mvBg)" />
+  <circle cx="480" cy="100" r="160" fill="#8b5cf6" fill-opacity="0.14" />
+  <circle cx="150" cy="290" r="140" fill="#3b82f6" fill-opacity="0.12" />
+
+  <rect x="44" y="36" width="552" height="308" rx="16" fill="#0d1226" stroke="#312e81" stroke-width="1.5" />
+
+  <!-- Cinema Screen Arc -->
+  <path d="M100 84Q240 60 380 84" stroke="url(#mvAccent)" stroke-width="4" stroke-linecap="round" />
+  <text x="240" y="106" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">SCREEN</text>
+
+  <!-- Seat Matrix -->
+  <g transform="translate(108, 128)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="34" y="0" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="68" y="0" width="26" height="22" rx="5" fill="#3b82f6" />
+    <rect x="102" y="0" width="26" height="22" rx="5" fill="#3b82f6" />
+    <rect x="150" y="0" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="184" y="0" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="218" y="0" width="26" height="22" rx="5" fill="#1e293b" />
+
+    <!-- Row 2 -->
+    <rect x="0" y="34" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="34" y="34" width="26" height="22" rx="5" fill="#8b5cf6" />
+    <rect x="68" y="34" width="26" height="22" rx="5" fill="#8b5cf6" />
+    <rect x="102" y="34" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="150" y="34" width="26" height="22" rx="5" fill="#38bdf8" />
+    <rect x="184" y="34" width="26" height="22" rx="5" fill="#38bdf8" />
+    <rect x="218" y="34" width="26" height="22" rx="5" fill="#1e293b" />
+
+    <!-- Row 3 -->
+    <rect x="0" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="34" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="68" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="102" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="150" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="184" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+    <rect x="218" y="68" width="26" height="22" rx="5" fill="#1e293b" />
+  </g>
+
+  <!-- Movie Listing strip -->
+  <rect x="74" y="246" width="320" height="72" rx="12" fill="#131936" stroke="#312e81" />
+  <rect x="92" y="262" width="44" height="40" rx="6" fill="url(#mvAccent)" fill-opacity="0.7" />
+  <rect x="150" y="266" width="120" height="10" rx="5" fill="#e2e8f0" fill-opacity="0.85" />
+  <rect x="150" y="286" width="84" height="8" rx="4" fill="#94a3b8" fill-opacity="0.6" />
+
+  <!-- Ticket / Booking Card -->
+  <rect x="414" y="64" width="156" height="254" rx="14" fill="#141b38" stroke="#6366f1" stroke-opacity="0.5" />
+  <text x="434" y="96" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="700">Booking Pass</text>
+  <rect x="434" y="114" width="116" height="10" rx="5" fill="#38bdf8" fill-opacity="0.65" />
+  <rect x="434" y="136" width="90" height="8" rx="4" fill="#94a3b8" fill-opacity="0.5" />
+  <line x1="422" y1="184" x2="562" y2="184" stroke="#475569" stroke-dasharray="5 5" />
+  <rect x="434" y="204" width="116" height="44" rx="8" fill="#0d1226" />
+  <rect x="434" y="266" width="116" height="34" rx="8" fill="url(#mvAccent)" />
+  <text x="492" y="287" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">Confirm Seats</text>
+</svg>
+

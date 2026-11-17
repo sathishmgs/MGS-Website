@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" fill="none">
+  <defs>
+    <linearGradient id="bkBg" x1="0" y1="0" x2="640" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090514" />
+      <stop offset="100%" stop-color="#1d0a22" />
+    </linearGradient>
+    <linearGradient id="bkLaravel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <linearGradient id="bkAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="380" fill="url(#bkBg)" />
+  <circle cx="520" cy="80" r="160" fill="#f43f5e" fill-opacity="0.14" />
+  <circle cx="110" cy="300" r="140" fill="#a855f7" fill-opacity="0.12" />
+
+  <!-- App Window Frame -->
+  <rect x="36" y="28" width="568" height="324" rx="14" fill="#0f091c" stroke="#33152f" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="36" y="28" width="568" height="36" rx="14" fill="#1c0f26" />
+  <circle cx="58" cy="46" r="5" fill="#ef4444" />
+  <circle cx="74" cy="46" r="5" fill="#f59e0b" />
+  <circle cx="90" cy="46" r="5" fill="#10b981" />
+  <text x="320" y="50" text-anchor="middle" fill="#fda4af" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Laravel Bookstore Application • Eloquent ORM &amp; CRUD Engine</text>
+
+  <!-- Left Sidebar -->
+  <rect x="36" y="64" width="144" height="288" fill="#150a21" />
+  <g transform="translate(50, 80)">
+    <rect width="116" height="26" rx="6" fill="url(#bkLaravel)" fill-opacity="0.25" stroke="#f43f5e" stroke-opacity="0.5" />
+    <text x="58" y="17" text-anchor="middle" fill="#fb7185" font-family="sans-serif" font-size="10" font-weight="700">LARAVEL BOOKS</text>
+    
+    <g transform="translate(4, 40)">
+      <rect width="108" height="22" rx="4" fill="#be123c" fill-opacity="0.3" />
+      <text x="10" y="15" fill="#fda4af" font-family="sans-serif" font-size="10" font-weight="600">All Books (CRUD)</text>
+    </g>
+    <g transform="translate(4, 70)">
+      <text x="10" y="15" fill="#94a3b8" font-family="sans-serif" font-size="10">Authors &amp; Genres</text>
+    </g>
+    <g transform="translate(4, 96)">
+      <text x="10" y="15" fill="#94a3b8" font-family="sans-serif" font-size="10">Stock &amp; Pricing</text>
+    </g>
+    <g transform="translate(4, 122)">
+      <text x="10" y="15" fill="#94a3b8" font-family="sans-serif" font-size="10">Customer Orders</text>
+    </g>
+    <g transform="translate(4, 148)">
+      <text x="10" y="15" fill="#94a3b8" font-family="sans-serif" font-size="10">Migration Logs</text>
+    </g>
+  </g>
+
+  <!-- Main Content Dashboard -->
+  <g transform="translate(196, 78)">
+    <!-- KPI Header -->
+    <rect x="0" y="0" width="120" height="58" rx="8" fill="#1c0f2b" stroke="#381b40" />
+    <text x="14" y="20" fill="#94a3b8" font-family="sans-serif" font-size="10">Total Books</text>
+    <text x="14" y="44" fill="#fb7185" font-family="sans-serif" font-size="18" font-weight="700">420 Titles</text>
+
+    <rect x="134" y="0" width="120" height="58" rx="8" fill="#1c0f2b" stroke="#381b40" />
+    <text x="14" y="20" fill="#94a3b8" font-family="sans-serif" font-size="10">Active Categories</text>
+    <text x="14" y="44" fill="#fbbf24" font-family="sans-serif" font-size="18" font-weight="700">18 Genres</text>
+
+    <rect x="268" y="0" width="120" height="58" rx="8" fill="#1c0f2b" stroke="#381b40" />
+    <text x="14" y="20" fill="#94a3b8" font-family="sans-serif" font-size="10">CRUD Action</text>
+    <text x="14" y="44" fill="#34d399" font-family="sans-serif" font-size="16" font-weight="700">+ New Book</text>
+
+    <!-- Books Management Table Mockup -->
+    <rect x="0" y="72" width="388" height="190" rx="10" fill="#160c24" stroke="#33173d" />
+    <rect x="0" y="72" width="388" height="32" rx="10" fill="#241238" />
+    <text x="16" y="93" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Book Inventory &amp; RESTful Operations</text>
+
+    <!-- Table Rows -->
+    <g transform="translate(14, 116)">
+      <rect width="360" height="30" rx="6" fill="#2b1542" />
+      <rect x="8" y="6" width="18" height="18" rx="3" fill="#f43f5e" />
+      <text x="34" y="19" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Clean Code • Robert C. Martin</text>
+      <text x="214" y="19" fill="#fda4af" font-family="sans-serif" font-size="10">₹850 • In Stock</text>
+      <rect x="296" y="7" width="26" height="16" rx="3" fill="#3b82f6" />
+      <text x="309" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="8" font-weight="700">Edit</text>
+      <rect x="328" y="7" width="26" height="16" rx="3" fill="#ef4444" />
+      <text x="341" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="8" font-weight="700">Del</text>
+    </g>
+
+    <g transform="translate(14, 154)">
+      <rect width="360" height="30" rx="6" fill="#200e33" />
+      <rect x="8" y="6" width="18" height="18" rx="3" fill="#a855f7" />
+      <text x="34" y="19" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">The Pragmatic Programmer</text>
+      <text x="214" y="19" fill="#fda4af" font-family="sans-serif" font-size="10">₹920 • In Stock</text>
+      <rect x="296" y="7" width="26" height="16" rx="3" fill="#3b82f6" />
+      <text x="309" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="8" font-weight="700">Edit</text>
+      <rect x="328" y="7" width="26" height="16" rx="3" fill="#ef4444" />
+      <text x="341" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="8" font-weight="700">Del</text>
+    </g>
+
+    <g transform="translate(14, 192)">
+      <rect width="360" height="30" rx="6" fill="#2b1542" />
+      <rect x="8" y="6" width="18" height="18" rx="3" fill="#10b981" />
+      <text x="34" y="19" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Learning PHP, MySQL &amp; JS</text>
+      <text x="214" y="19" fill="#fda4af" font-family="sans-serif" font-size="10">₹640 • In Stock</text>
+      <rect x="296" y="7" width="26" height="16" rx="3" fill="#3b82f6" />
+      <text x="309" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="8" font-weight="700">Edit</text>
+      <rect x="328" y="7" width="26" height="16" rx="3" fill="#ef4444" />
+      <text x="341" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="8" font-weight="700">Del</text>
+    </g>
+
+    <!-- Status Bar -->
+    <g transform="translate(14, 230)">
+      <text x="0" y="16" fill="#94a3b8" font-family="sans-serif" font-size="9">Laravel 10.x • Blade Templates • MySQL Database • Form Requests Validation</text>
+    </g>
+  </g>
+</svg>

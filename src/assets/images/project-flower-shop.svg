@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" fill="none">
+  <defs>
+    <linearGradient id="flBg" x1="0" y1="0" x2="640" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c0714" />
+      <stop offset="100%" stop-color="#1f0f29" />
+    </linearGradient>
+    <linearGradient id="flFloral" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#fda4af" />
+    </linearGradient>
+    <linearGradient id="flLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="380" fill="url(#flBg)" />
+  <circle cx="110" cy="90" r="140" fill="#f43f5e" fill-opacity="0.14" />
+  <circle cx="530" cy="300" r="150" fill="#ec4899" fill-opacity="0.15" />
+
+  <!-- App Window Frame -->
+  <rect x="36" y="28" width="568" height="324" rx="14" fill="#130b1c" stroke="#331c40" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="36" y="28" width="568" height="36" rx="14" fill="#1c1029" />
+  <circle cx="58" cy="46" r="5" fill="#ef4444" />
+  <circle cx="74" cy="46" r="5" fill="#f59e0b" />
+  <circle cx="90" cy="46" r="5" fill="#10b981" />
+  <text x="320" y="50" text-anchor="middle" fill="#fda4af" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Bloom &amp; Petal • Responsive Flower Shop Storefront</text>
+
+  <!-- Storefront Navbar -->
+  <g transform="translate(56, 74)">
+    <rect width="528" height="34" rx="8" fill="#241433" stroke="#3b1f52" />
+    <circle cx="20" cy="17" r="7" fill="url(#flFloral)" />
+    <text x="36" y="21" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="700">Petals Flora</text>
+    
+    <text x="180" y="21" fill="#fda4af" font-family="sans-serif" font-size="10" font-weight="600">Bouquets</text>
+    <text x="246" y="21" fill="#cbd5e1" font-family="sans-serif" font-size="10">Roses</text>
+    <text x="296" y="21" fill="#cbd5e1" font-family="sans-serif" font-size="10">Exotic Orchids</text>
+    <text x="382" y="21" fill="#cbd5e1" font-family="sans-serif" font-size="10">Weddings</text>
+    
+    <!-- Cart Pill -->
+    <rect x="446" y="6" width="70" height="22" rx="11" fill="#f43f5e" />
+    <text x="481" y="20" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Cart (3)</text>
+  </g>
+
+  <!-- Product Catalog Grid -->
+  <g transform="translate(56, 120)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="166" height="216" rx="10" fill="#1c1126" stroke="#361f47" />
+      <rect x="10" y="10" width="146" height="106" rx="6" fill="#2d173d" />
+      <!-- Flower icon visual -->
+      <circle cx="83" cy="56" r="22" fill="url(#flFloral)" />
+      <circle cx="83" cy="56" r="10" fill="#fde047" />
+      <path d="M83 78 C83 94 88 100 83 106" stroke="url(#flLeaf)" stroke-width="3" stroke-linecap="round" fill="none" />
+      <text x="14" y="134" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Red Velvet Roses</text>
+      <text x="14" y="150" fill="#94a3b8" font-family="sans-serif" font-size="9">12 Premium Fresh Stems</text>
+      <text x="14" y="174" fill="#fb7185" font-family="sans-serif" font-size="13" font-weight="700">₹499</text>
+      <rect x="14" y="184" width="138" height="22" rx="4" fill="#f43f5e" />
+      <text x="83" y="198" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Add to Cart</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(181, 0)">
+      <rect width="166" height="216" rx="10" fill="#1c1126" stroke="#361f47" />
+      <rect x="10" y="10" width="146" height="106" rx="6" fill="#2d173d" />
+      <!-- Tulip / Exotic Visual -->
+      <circle cx="83" cy="56" r="22" fill="#ec4899" />
+      <circle cx="83" cy="56" r="10" fill="#fff176" />
+      <path d="M83 78 C83 94 78 100 83 106" stroke="url(#flLeaf)" stroke-width="3" stroke-linecap="round" fill="none" />
+      <text x="14" y="134" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Imperial Orchids</text>
+      <text x="14" y="150" fill="#94a3b8" font-family="sans-serif" font-size="9">Handcrafted Glass Vase</text>
+      <text x="14" y="174" fill="#fb7185" font-family="sans-serif" font-size="13" font-weight="700">₹899</text>
+      <rect x="14" y="184" width="138" height="22" rx="4" fill="#f43f5e" />
+      <text x="83" y="198" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Add to Cart</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(362, 0)">
+      <rect width="166" height="216" rx="10" fill="#1c1126" stroke="#361f47" />
+      <rect x="10" y="10" width="146" height="106" rx="6" fill="#2d173d" />
+      <!-- Sunflower Visual -->
+      <circle cx="83" cy="56" r="22" fill="#f59e0b" />
+      <circle cx="83" cy="56" r="10" fill="#78350f" />
+      <path d="M83 78 C83 94 88 100 83 106" stroke="url(#flLeaf)" stroke-width="3" stroke-linecap="round" fill="none" />
+      <text x="14" y="134" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Sunlit Bliss Bouquet</text>
+      <text x="14" y="150" fill="#94a3b8" font-family="sans-serif" font-size="9">Seasonal Yellow Blooms</text>
+      <text x="14" y="174" fill="#fb7185" font-family="sans-serif" font-size="13" font-weight="700">₹649</text>
+      <rect x="14" y="184" width="138" height="22" rx="4" fill="#f43f5e" />
+      <text x="83" y="198" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Add to Cart</text>
+    </g>
+  </g>
+</svg>

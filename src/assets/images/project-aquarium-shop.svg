@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" fill="none">
+  <defs>
+    <linearGradient id="aqBg" x1="0" y1="0" x2="640" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#040916" />
+      <stop offset="100%" stop-color="#0b1b36" />
+    </linearGradient>
+    <linearGradient id="aqAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="marineGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="380" fill="url(#aqBg)" />
+  <circle cx="120" cy="80" r="160" fill="#0ea5e9" fill-opacity="0.15" />
+  <circle cx="520" cy="310" r="150" fill="#6366f1" fill-opacity="0.16" />
+
+  <!-- App Window Frame -->
+  <rect x="36" y="28" width="568" height="324" rx="14" fill="#091224" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="36" y="28" width="568" height="36" rx="14" fill="#0d1933" />
+  <circle cx="58" cy="46" r="5" fill="#ef4444" />
+  <circle cx="74" cy="46" r="5" fill="#f59e0b" />
+  <circle cx="90" cy="46" r="5" fill="#10b981" />
+  <text x="320" y="50" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Aquarium Shop Management System • PHP &amp; MySQL</text>
+
+  <!-- Sidebar -->
+  <rect x="36" y="64" width="140" height="288" fill="#0b162e" />
+  <rect x="52" y="82" width="108" height="24" rx="6" fill="url(#aqAccent)" fill-opacity="0.25" stroke="#38bdf8" stroke-opacity="0.4" />
+  <text x="106" y="98" text-anchor="middle" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">AquaShop Pro</text>
+  
+  <rect x="52" y="122" width="108" height="12" rx="4" fill="#38bdf8" fill-opacity="0.8" />
+  <rect x="52" y="146" width="90" height="10" rx="4" fill="#64748b" fill-opacity="0.5" />
+  <rect x="52" y="170" width="98" height="10" rx="4" fill="#64748b" fill-opacity="0.5" />
+  <rect x="52" y="194" width="84" height="10" rx="4" fill="#64748b" fill-opacity="0.5" />
+  <rect x="52" y="218" width="92" height="10" rx="4" fill="#64748b" fill-opacity="0.5" />
+
+  <!-- Main Content Area -->
+  <!-- Stat Cards -->
+  <g transform="translate(196, 78)">
+    <rect width="118" height="60" rx="8" fill="#101d3b" stroke="#1e3a5f" />
+    <text x="14" y="22" fill="#94a3b8" font-family="sans-serif" font-size="10">Total Species</text>
+    <text x="14" y="46" fill="#38bdf8" font-family="sans-serif" font-size="18" font-weight="700">148+</text>
+  </g>
+  <g transform="translate(328, 78)">
+    <rect width="118" height="60" rx="8" fill="#101d3b" stroke="#1e3a5f" />
+    <text x="14" y="22" fill="#94a3b8" font-family="sans-serif" font-size="10">Active Orders</text>
+    <text x="14" y="46" fill="#a855f7" font-family="sans-serif" font-size="18" font-weight="700">32</text>
+  </g>
+  <g transform="translate(460, 78)">
+    <rect width="128" height="60" rx="8" fill="#101d3b" stroke="#1e3a5f" />
+    <text x="14" y="22" fill="#94a3b8" font-family="sans-serif" font-size="10">Cart Operations</text>
+    <text x="14" y="46" fill="#10b981" font-family="sans-serif" font-size="18" font-weight="700">Live Sync</text>
+  </g>
+
+  <!-- Product & Order Management Table Mockup -->
+  <rect x="196" y="152" width="392" height="184" rx="10" fill="#0d1832" stroke="#1e293b" />
+  <rect x="196" y="152" width="392" height="30" rx="10" fill="#132347" />
+  <text x="214" y="172" fill="#cbd5e1" font-family="sans-serif" font-size="11" font-weight="600">Product &amp; Inventory Management</text>
+  
+  <!-- Table rows -->
+  <g transform="translate(210, 194)">
+    <rect width="364" height="28" rx="6" fill="#15274d" />
+    <circle cx="16" cy="14" r="6" fill="#38bdf8" />
+    <text x="32" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Neon Tetra Marine Pack</text>
+    <text x="220" y="18" fill="#38bdf8" font-family="sans-serif" font-size="10">In Stock (84)</text>
+    <rect x="300" y="6" width="54" height="16" rx="4" fill="#0284c7" />
+    <text x="327" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Order</text>
+  </g>
+  <g transform="translate(210, 230)">
+    <rect width="364" height="28" rx="6" fill="#111f3d" />
+    <circle cx="16" cy="14" r="6" fill="#a855f7" />
+    <text x="32" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Discus Cichlid Exotic</text>
+    <text x="220" y="18" fill="#38bdf8" font-family="sans-serif" font-size="10">In Stock (18)</text>
+    <rect x="300" y="6" width="54" height="16" rx="4" fill="#0284c7" />
+    <text x="327" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Order</text>
+  </g>
+  <g transform="translate(210, 266)">
+    <rect width="364" height="28" rx="6" fill="#15274d" />
+    <circle cx="16" cy="14" r="6" fill="#10b981" />
+    <text x="32" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Aquascaping Filtration System</text>
+    <text x="220" y="18" fill="#10b981" font-family="sans-serif" font-size="10">Available (42)</text>
+    <rect x="300" y="6" width="54" height="16" rx="4" fill="#0284c7" />
+    <text x="327" y="18" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700">Order</text>
+  </g>
+  <g transform="translate(210, 302)">
+    <rect width="364" height="24" rx="6" fill="#111f3d" />
+    <circle cx="16" cy="12" r="5" fill="#f59e0b" />
+    <text x="32" y="16" fill="#f8fafc" font-family="sans-serif" font-size="10">LED Planted Tank Fixture</text>
+    <text x="220" y="16" fill="#f59e0b" font-family="sans-serif" font-size="10">Low Stock (5)</text>
+  </g>
+</svg>

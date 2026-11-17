@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="40" y1="40" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32" />
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#070b19" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="360" height="360" rx="28" fill="url(#bgGrad)" />
+  <rect width="360" height="360" rx="28" fill="url(#glow)" />
+
+  <!-- Subtle tech grid -->
+  <g stroke="#1e293b" stroke-opacity="0.6" stroke-width="1">
+    <path d="M0 72H360M0 144H360M0 216H360M0 288H360" />
+    <path d="M72 0V360M144 0V360M216 0V360M288 0V360" />
+  </g>
+
+  <!-- Outer frame ring with pulse effect -->
+  <circle cx="180" cy="160" r="102" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="8 6" stroke-opacity="0.8" />
+  <circle cx="180" cy="160" r="90" fill="#0b1329" stroke="url(#accentGrad)" stroke-width="2.5" />
+
+  <!-- Clean Developer Silhouette with Headphones / Dev vibe -->
+  <circle cx="180" cy="132" r="32" fill="url(#accentGrad)" fill-opacity="0.95" />
+  <path
+    d="M122 228C127 190 150 174 180 174C210 174 233 190 238 228"
+    fill="url(#accentGrad)"
+    fill-opacity="0.9"
+  />
+  <path
+    d="M122 228C127 190 150 174 180 174C210 174 233 190 238 228"
+    stroke="#e2e8f0"
+    stroke-opacity="0.3"
+    stroke-width="1.5"
+  />
+
+  <!-- Subtle code brackets beside head -->
+  <text x="110" y="140" fill="#38bdf8" font-family="monospace" font-size="18" font-weight="700">&lt;</text>
+  <text x="236" y="140" fill="#a855f7" font-family="monospace" font-size="18" font-weight="700">/&gt;</text>
+
+  <!-- Developer Tag Badge -->
+  <rect x="70" y="286" width="220" height="36" rx="18" fill="#0b1329" fill-opacity="0.95" stroke="url(#accentGrad)" stroke-width="1.5" />
+  <text x="180" y="309" text-anchor="middle" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.05em">
+    SATHISH • DEVELOPER
+  </text>
+</svg>
