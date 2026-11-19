@@ -1,19 +1,10 @@
 :root {
-<<<<<<< HEAD
   --bg-primary: #060913;
   --bg-secondary: #0b1122;
   --bg-card: rgba(15, 23, 42, 0.66);
   --bg-card-hover: rgba(20, 30, 56, 0.85);
   --border-subtle: rgba(148, 163, 184, 0.14);
   --border-accent: rgba(56, 189, 248, 0.36);
-=======
-  --bg-primary: #030712;
-  --bg-secondary: #080e22;
-  --bg-card: rgba(11, 18, 38, 0.72);
-  --bg-card-hover: rgba(16, 26, 56, 0.88);
-  --border-subtle: rgba(148, 163, 184, 0.16);
-  --border-accent: rgba(56, 189, 248, 0.4);
->>>>>>> 8db309981a72daacc371d1b9e3cb55c3db5dae09
 
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
@@ -23,7 +14,6 @@
   --accent-blue: #3b82f6;
   --accent-purple: #8b5cf6;
   --accent-violet: #a855f7;
-<<<<<<< HEAD
   --accent-green: #10b981;
   --accent-red: #f87171;
 
@@ -32,19 +22,6 @@
 
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
-=======
-  --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
-  --accent-rose: #f43f5e;
-
-  --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #6366f1 50%, #a855f7 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(56, 189, 248, 0.25), rgba(168, 85, 247, 0.25));
-  --gradient-cyan: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
-  --gradient-emerald: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  --gradient-purple: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
-
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
->>>>>>> 8db309981a72daacc371d1b9e3cb55c3db5dae09
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   --radius-sm: 8px;
@@ -52,13 +29,8 @@
   --radius-lg: 20px;
   --radius-pill: 9999px;
 
-<<<<<<< HEAD
   --shadow-card: 0 18px 42px -18px rgba(2, 6, 23, 0.85);
   --shadow-glow: 0 10px 30px -10px rgba(59, 130, 246, 0.45);
-=======
-  --shadow-card: 0 20px 48px -18px rgba(0, 0, 0, 0.7);
-  --shadow-glow: 0 10px 30px -10px rgba(56, 189, 248, 0.45);
->>>>>>> 8db309981a72daacc371d1b9e3cb55c3db5dae09
   --nav-height: 74px;
   --container-max: 1200px;
 }
@@ -90,15 +62,9 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   background-image:
-<<<<<<< HEAD
     radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.08), transparent 36%),
     radial-gradient(circle at 85% 22%, rgba(139, 92, 246, 0.09), transparent 38%),
     radial-gradient(circle at 50% 85%, rgba(59, 130, 246, 0.06), transparent 42%);
-=======
-    radial-gradient(circle at 20% 15%, rgba(56, 189, 248, 0.08), transparent 40%),
-    radial-gradient(circle at 80% 25%, rgba(139, 92, 246, 0.09), transparent 42%),
-    radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.05), transparent 45%);
->>>>>>> 8db309981a72daacc371d1b9e3cb55c3db5dae09
   background-attachment: fixed;
   overflow-x: clip;
   -webkit-font-smoothing: antialiased;
@@ -158,8 +124,4 @@ p {
 
 .skip-link:focus {
   top: 16px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8db309981a72daacc371d1b9e3cb55c3db5dae09
