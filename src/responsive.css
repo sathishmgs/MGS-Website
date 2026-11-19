@@ -179,3 +179,47 @@
     align-items: flex-start;
   }
 }
+
+/* Keep the price-estimator heading readable without overflow on phones. */
+@media (max-width: 640px) {
+  .section--calculator .section-header {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 24px;
+  }
+
+  .section--calculator .section-eyebrow {
+    max-width: 100%;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+  }
+
+  .section--calculator .section-title {
+    max-width: 100%;
+    font-size: clamp(1.65rem, 7.2vw, 2.15rem);
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+    overflow-wrap: normal;
+  }
+
+  .section--calculator .section-title .text-gradient {
+    display: inline;
+  }
+
+  .section--calculator .section-subtitle {
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 380px) {
+  .section--calculator .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section--calculator .section-eyebrow {
+    font-size: 0.66rem;
+  }
+}
