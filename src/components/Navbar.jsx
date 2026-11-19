@@ -45,6 +45,7 @@ export default function Navbar({ activeSection }) {
   };
 
   return (
+    <>
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         {/* Brand Logo */}
@@ -94,7 +95,9 @@ export default function Navbar({ activeSection }) {
             title="Chat directly on WhatsApp"
           >
             <MessageSquare size={15} aria-hidden="true" />
-            <span>Chat on WhatsApp</span>
+            <span>
+              <span className="navbar__quote-btn-long">Chat on </span>WhatsApp
+            </span>
           </a>
 
           <a
@@ -118,13 +121,22 @@ export default function Navbar({ activeSection }) {
           </button>
         </div>
       </div>
+    </header>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer Menu (rendered outside the header so the header's
+          backdrop-filter does not trap this fixed-position overlay) */}
       <div
         id="mobile-navigation"
         className={`navbar__mobile ${menuOpen ? 'navbar__mobile--open' : ''}`}
         aria-hidden={!menuOpen}
+        inert={!menuOpen}
       >
+        <div
+          className="navbar__mobile-backdrop"
+          onClick={() => setMenuOpen(false)}
+          aria-hidden="true"
+        />
+        <div className="navbar__mobile-content" role="dialog" aria-modal="true" aria-label="Site menu">
         <div className="navbar__mobile-header">
           <div className="navbar__mobile-brand-group">
             <img
@@ -140,7 +152,7 @@ export default function Navbar({ activeSection }) {
           </div>
           <button
             type="button"
-            className="modal-card__close"
+            className="navbar__mobile-close"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
@@ -197,7 +209,8 @@ export default function Navbar({ activeSection }) {
             </a>
           </div>
         </nav>
+        </div>
       </div>
-    </header>
+    </>
   );
 }
