@@ -61,13 +61,48 @@ const PROJECT_TYPES = [
 ];
 
 const EXTRA_FEATURES = [
-  { id: 'whatsapp_orders', label: '1-Click WhatsApp Ordering / Enquiry Button', default: true },
-  { id: 'job_card_system', label: 'Job Card Maker & Vehicle Service Due Reminder (Workshops)', default: false },
-  { id: 'payment_gateway', label: 'Online Payment Integration (UPI, GPay, PhonePe, Cards)', default: true },
-  { id: 'barcode_support', label: 'Barcode Scanner & Thermal Receipt Print (For Billing)', default: false },
-  { id: 'admin_panel', label: 'Simple Admin Dashboard to Edit Products & View Reports', default: true },
-  { id: 'domain_hosting', label: 'Custom Domain (.com / .in) & Fast Secure Cloud Hosting', default: true },
-  { id: 'training_support', label: 'Free Tamil & English Video/Phone Training & Support', default: true },
+  {
+    id: 'whatsapp_orders',
+    label: '1-Click WhatsApp Ordering / Enquiry Button',
+    shortLabel: 'WhatsApp Ordering',
+    default: true,
+  },
+  {
+    id: 'job_card_system',
+    label: 'Job Card Maker & Vehicle Service Due Reminder (Workshops)',
+    shortLabel: 'Job Cards & Reminders',
+    default: false,
+  },
+  {
+    id: 'payment_gateway',
+    label: 'Online Payment Integration (UPI, GPay, PhonePe, Cards)',
+    shortLabel: 'UPI & Card Payments',
+    default: true,
+  },
+  {
+    id: 'barcode_support',
+    label: 'Barcode Scanner & Thermal Receipt Print (For Billing)',
+    shortLabel: 'Barcode & Thermal Print',
+    default: false,
+  },
+  {
+    id: 'admin_panel',
+    label: 'Simple Admin Dashboard to Edit Products & View Reports',
+    shortLabel: 'Admin Dashboard',
+    default: true,
+  },
+  {
+    id: 'domain_hosting',
+    label: 'Custom Domain (.com / .in) & Fast Secure Cloud Hosting',
+    shortLabel: 'Domain & Cloud Hosting',
+    default: true,
+  },
+  {
+    id: 'training_support',
+    label: 'Free Tamil & English Video/Phone Training & Support',
+    shortLabel: 'Training & Live Support',
+    default: true,
+  },
 ];
 
 export default function QuoteCalculator() {
@@ -145,7 +180,10 @@ export default function QuoteCalculator() {
                       onClick={() => setSelectedType(type.id)}
                     >
                       <div className="calc-type-card__header">
-                        <span className="calc-type-card__radio">
+                        <span
+                          className={`calc-type-card__radio ${isSelected ? 'calc-type-card__radio--selected' : ''}`}
+                          aria-hidden="true"
+                        >
                           {isSelected && <span className="radio-inner" />}
                         </span>
                         <div className="calc-type-card__titles">
@@ -194,6 +232,9 @@ export default function QuoteCalculator() {
           {/* Right Summary Panel */}
           <div className="calc-right">
             <div className="calc-summary-card">
+              <div className="calc-summary__badge">
+                <span>Step 3 &bull; Instant Quote</span>
+              </div>
               <div className="calc-summary__header">
                 <Sparkles size={20} className="text-gradient" />
                 <h4>Your Project Configuration</h4>
@@ -220,7 +261,7 @@ export default function QuoteCalculator() {
                   return (
                     <div key={id} className="preview-chip">
                       <CheckCircle2 size={13} aria-hidden="true" />
-                      <span>{f ? f.label.split('(')[0] : id}</span>
+                      <span>{f ? (f.shortLabel || f.label.split('(')[0]) : id}</span>
                     </div>
                   );
                 })}
@@ -233,13 +274,20 @@ export default function QuoteCalculator() {
               <div className="calc-quick-inputs">
                 <input
                   type="text"
+                  name="clientName"
+                  autoComplete="name"
+                  aria-label="Your Name (Optional)"
                   placeholder="Your Name (Optional)"
                   value={clientName}
                   onChange={(e) => setClientName(e.target.value)}
                   className="calc-input"
                 />
                 <input
-                  type="text"
+                  type="tel"
+                  name="clientPhone"
+                  autoComplete="tel"
+                  inputMode="tel"
+                  aria-label="Your Phone / WhatsApp No."
                   placeholder="Your Phone / WhatsApp No."
                   value={clientPhone}
                   onChange={(e) => setClientPhone(e.target.value)}
